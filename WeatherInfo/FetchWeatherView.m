@@ -42,19 +42,26 @@
         self.minTempLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.minTempLabel];
         
-        self.humidityLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.minTempLabel.frame.origin.y+self.minTempLabel.frame.size.height+10, 200, 25)];
+        self.pressureLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.minTempLabel.frame.origin.y+self.minTempLabel.frame.size.height+10, 200, 25)];
+        self.pressureLabel.font = [UIFont systemFontOfSize:16];
+        self.pressureLabel.textColor = [UIColor blackColor];
+        self.pressureLabel.backgroundColor = [UIColor clearColor];
+        self.pressureLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:self.pressureLabel];
+        
+        self.humidityLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.pressureLabel.frame.origin.y+self.pressureLabel.frame.size.height+10, 200, 25)];
         self.humidityLabel.font = [UIFont systemFontOfSize:16];
         self.humidityLabel.textColor = [UIColor blackColor];
         self.humidityLabel.backgroundColor = [UIColor clearColor];
         self.humidityLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.humidityLabel];
         
-        self.pressureLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.humidityLabel.frame.origin.y+self.humidityLabel.frame.size.height+10, 200, 25)];
-        self.pressureLabel.font = [UIFont systemFontOfSize:16];
-        self.pressureLabel.textColor = [UIColor blackColor];
-        self.pressureLabel.backgroundColor = [UIColor clearColor];
-        self.pressureLabel.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:self.pressureLabel];
+        self.alertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.humidityLabel.frame.origin.y+self.humidityLabel.frame.size.height+10, 500, 25)];
+        self.alertLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:18];
+        self.alertLabel.textColor = [UIColor blackColor];
+        self.alertLabel.backgroundColor = [UIColor clearColor];
+        self.alertLabel.textAlignment = NSTextAlignmentLeft;
+        [self addSubview:self.alertLabel];
     }
     return self;
 }

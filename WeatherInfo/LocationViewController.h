@@ -15,6 +15,7 @@
 
 @interface LocationViewController : UIViewController
 @property (nonatomic,weak) id<LocationDataDelegate> delegate;
+-(BOOL) validateCity:(NSString*) country :(NSString*) city;
 
 @end
 

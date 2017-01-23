@@ -17,8 +17,9 @@
 @property (nonatomic,strong)UILabel *temperatureLabel;
 @property (nonatomic,strong)UILabel *maxTempLabel;
 @property (nonatomic,strong)UILabel *minTempLabel;
-@property (nonatomic,strong)UILabel *humidityLabel;
 @property (nonatomic,strong)UILabel *pressureLabel;
+@property (nonatomic,strong)UILabel *humidityLabel;
+@property (nonatomic,strong)UILabel *alertLabel;
 
 @end
 

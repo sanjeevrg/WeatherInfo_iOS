@@ -18,8 +18,11 @@
 		9F85DEDC1E33684500E09E22 /* FetchWeatherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEDB1E33684500E09E22 /* FetchWeatherService.m */; };
 		9F85DEE01E336BD100E09E22 /* FetchWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEDF1E336BD100E09E22 /* FetchWeatherModel.m */; };
 		9F85DEE31E336CAE00E09E22 /* FetchWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEE21E336CAE00E09E22 /* FetchWeatherView.m */; };
-		9F85DEE61E336EAB00E09E22 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEE51E336EAB00E09E22 /* LocationViewController.m */; };
 		9F85DEE81E33C98100E09E22 /* listOfCities.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F85DEE71E33C98100E09E22 /* listOfCities.json */; };
+		9F85DEEA1E351EC500E09E22 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEE91E351EC500E09E22 /* LocationViewController.m */; };
+		9F85DEEE1E36316600E09E22 /* FetchWeatherModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEED1E36316600E09E22 /* FetchWeatherModelTests.m */; };
+		9F85DEF01E36408D00E09E22 /* LocationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEEF1E36408D00E09E22 /* LocationViewControllerTests.m */; };
+		9F85DEF21E36442500E09E22 /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F85DEF11E36442500E09E22 /* ViewControllerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,11 @@
 		9F85DEE11E336C9D00E09E22 /* FetchWeatherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchWeatherView.h; sourceTree = "<group>"; };
 		9F85DEE21E336CAE00E09E22 /* FetchWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchWeatherView.m; sourceTree = "<group>"; };
 		9F85DEE41E336E9300E09E22 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
-		9F85DEE51E336EAB00E09E22 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = ../LocationViewController.m; sourceTree = "<group>"; };
 		9F85DEE71E33C98100E09E22 /* listOfCities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = listOfCities.json; path = WeatherInfo/listOfCities.json; sourceTree = "<group>"; };
+		9F85DEE91E351EC500E09E22 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		9F85DEED1E36316600E09E22 /* FetchWeatherModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FetchWeatherModelTests.m; path = WeatherInfoTests/FetchWeatherModelTests.m; sourceTree = SOURCE_ROOT; };
+		9F85DEEF1E36408D00E09E22 /* LocationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewControllerTests.m; sourceTree = "<group>"; };
+		9F85DEF11E36442500E09E22 /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +126,8 @@
 				9F85DEAC1E33675C00E09E22 /* AppDelegate.m */,
 				9F85DEAE1E33675C00E09E22 /* ViewController.h */,
 				9F85DEAF1E33675C00E09E22 /* ViewController.m */,
+				9F85DEE91E351EC500E09E22 /* LocationViewController.m */,
 				9F85DEE41E336E9300E09E22 /* LocationViewController.h */,
-				9F85DEE51E336EAB00E09E22 /* LocationViewController.m */,
 				9F85DEB11E33675C00E09E22 /* Main.storyboard */,
 				9F85DEB41E33675C00E09E22 /* Assets.xcassets */,
 				9F85DEB61E33675C00E09E22 /* LaunchScreen.storyboard */,
@@ -148,8 +154,11 @@
 		9F85DEC11E33675D00E09E22 /* WeatherInfoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F85DEF11E36442500E09E22 /* ViewControllerTest.m */,
+				9F85DEED1E36316600E09E22 /* FetchWeatherModelTests.m */,
 				9F85DEC21E33675D00E09E22 /* WeatherInfoTests.m */,
 				9F85DEC41E33675D00E09E22 /* Info.plist */,
+				9F85DEEF1E36408D00E09E22 /* LocationViewControllerTests.m */,
 			);
 			path = WeatherInfoTests;
 			sourceTree = "<group>";
@@ -299,7 +308,7 @@
 			files = (
 				9F85DEB01E33675C00E09E22 /* ViewController.m in Sources */,
 				9F85DEE01E336BD100E09E22 /* FetchWeatherModel.m in Sources */,
-				9F85DEE61E336EAB00E09E22 /* LocationViewController.m in Sources */,
+				9F85DEEA1E351EC500E09E22 /* LocationViewController.m in Sources */,
 				9F85DEAD1E33675C00E09E22 /* AppDelegate.m in Sources */,
 				9F85DEAA1E33675C00E09E22 /* main.m in Sources */,
 				9F85DEE31E336CAE00E09E22 /* FetchWeatherView.m in Sources */,
@@ -312,6 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F85DEC31E33675D00E09E22 /* WeatherInfoTests.m in Sources */,
+				9F85DEF01E36408D00E09E22 /* LocationViewControllerTests.m in Sources */,
+				9F85DEF21E36442500E09E22 /* ViewControllerTest.m in Sources */,
+				9F85DEEE1E36316600E09E22 /* FetchWeatherModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

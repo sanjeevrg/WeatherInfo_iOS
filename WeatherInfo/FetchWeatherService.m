@@ -4,12 +4,13 @@
 //
 //  Created by Sanjeev G on 21/01/17.
 //  Copyright © 2017 Sanjeev G. All rights reserved.
+//  Fetch weather information from openweather api
 //
 
 #import <Foundation/Foundation.h>
 #import "FetchWeatherService.h"
 
-#define kApiKey @"0f2ce24adbdd71d196d0157dd513ac9c" //&APPID=
+#define kApiKey @"0f2ce24adbdd71d196d0157dd513ac9c" //APIkey provided by openweather
 #define kOpenWeatherUrl @"http://api.openweathermap.org/data/2.5/weather?"
 #define kOpenWeatherForecastUrl @"http://api.openweathermap.org/data/2.5/forecast?"
 
@@ -27,7 +28,6 @@ static FetchWeatherService *sharedOpenWeatherService = nil;
 }
 
 - (void)requestWeatherWithCityName:(NSString*)cityName success:(successBlock)success failure:(failureBlock)fail {
-//    NSString *urlKey = @"&appid=";
     NSString * urlString = [NSString stringWithFormat:@"%@q=%@&appid=%@",kOpenWeatherUrl,cityName,kApiKey];
     [self requestWithUrlString:urlString
                        success:^(id responseObject) {
@@ -68,7 +68,6 @@ static FetchWeatherService *sharedOpenWeatherService = nil;
 }
 
 - (void)requestForecastWithCityName:(NSString*)cityName success:(successBlock)success failure:(failureBlock)fail {
-    //    NSString *urlKey = @"&appid=";
     NSString * urlString = [NSString stringWithFormat:@"%@q=%@&appid=%@",kOpenWeatherForecastUrl,cityName,kApiKey];
     [self requestWithUrlForecast:urlString
                        success:^(id responseObject) {

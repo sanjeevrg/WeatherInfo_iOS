@@ -19,7 +19,7 @@ typedef void (^failureBlock)(NSError* error);
 
 +(FetchWeatherService*)sharedInstance;
 - (void)requestWeatherWithCityName:(NSString*)cityName success:(successBlock)success failure:(failureBlock)fail;
-
+- (void)requestForecastWithCityName:(NSString*)cityName success:(successBlock)success failure:(failureBlock)fail;
 @end
 
 #endif /* FetchWeatherService_h */

@@ -17,8 +17,10 @@
 @property (nonatomic,strong)NSString *minTemp;
 @property (nonatomic,strong)NSString *humidity;
 @property (nonatomic,strong)NSString *pressure;
+@property (nonatomic,strong)NSString *alertMessage;
 
 - (void)updateModelWithDictionary:(NSDictionary*)responseDict;
+- (void)updateAlertMessage:(NSDictionary*)responseDict;
 
 @end
 
